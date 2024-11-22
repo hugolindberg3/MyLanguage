@@ -1,0 +1,3 @@
+import "std.mylang"
+
+"Hello, World!" print

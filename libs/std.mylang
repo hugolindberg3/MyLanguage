@@ -1,0 +1,15 @@
+macro print
+  .
+end
+
+macro square x
+  x dup *
+end
+
+macro cube x
+  x dup dup * *
+end
+
+macro concat a b
+  b a +
+end

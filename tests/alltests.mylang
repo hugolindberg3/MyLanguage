@@ -1,0 +1,26 @@
+import "std.mylang"
+
+# Arithmetic and Stack operations
+5 4 - print   # Output: 1
+10 2 / print  # Output: 5
+
+# Control Flow
+5 4 > if 1 print else 0 print end # Output: 1 (since 5 > 4)
+
+# Stack Manipulation
+5 dup print print     # Output: 5 5
+3 4 swap print print  # Output: 3 4
+
+# Macros
+macro square
+  dup *
+end
+
+5 square print
+
+# Printing with strings
+"Hello, World!" print
+
+# Variables
+macro X 10 end
+X .
