@@ -95,7 +95,43 @@ The language supports simple condition statements using `if`, `else` and `end`. 
 # Output: 1 (since 5 > 4)
 ```
 
-### **3. Stack manipulation**
+### **3. Loops**
+MyLang supports `while` loops for repeated execution of code based on a condition. A `while` block consist of:
+- **A condition** (evaluated before each iteration).
+- **A body** (executed repeatedly while the condition is true).
+
+**Syntax:**
+```mylang
+<command> while <condition> do
+    <loop body>
+end
+```
+**Example:**
+```mylang
+10 while dup 0 > do
+    dup print
+    1 -
+end
+
+# Output:
+# 10
+# 9
+# 8
+# 7
+# 6
+# 5
+# 4
+# 3
+# 2
+# 1
+```
+
+**How it works:**
+1. The condition (`dup 0 >`) checks if the top of the stack is greater than `0`.
+2. If true, the **loop body** runs (`dup print`, `1 -`).
+3. The loop continues until the condition evaluates to `false`.
+
+### **4. Stack manipulation**
 You can manipulate the stack with commands like `dup`, `swap` and `drop`.
 
 - `dup`: Duplicates the top value of the stack.
