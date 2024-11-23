@@ -22,5 +22,12 @@ end
 "Hello, World!" print
 
 # Variables
-macro X 10 end
+macro X 100 end
 X .
+
+# While loops
+
+10 while dup 0 > do
+  dup print
+  1 -
+end
